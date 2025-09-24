@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(253, 251, 248);
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1{
+    font-family: "Comforter", cursive;
+    text-align: center;
+    color: rgb(135, 5, 5);
+    font-size: 70px;
+}
+
+.quiz-selection{
+    background-color: #f5f3eb;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 7px 0px #807f7f;
+    width: 600px;
+}
+
+.questoes, h4{
+    padding: 15px;
+}
+
+button{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color:  rgb(135, 5, 5);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+}
+
+button:hover{
+    background-color: #b61313;
+}
+
+button:disabled{
+    background-color: #d3d3d3;
+    color: #a9a9a9;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+#resultado{
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+}

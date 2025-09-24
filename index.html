@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Stranger Quiz</title>
+</head>
+<body>
+    <main class="quiz-selection">
+        <h1>Stranger Quiz</h1>
+
+        <form id="quiz-form">
+        <section class="questões">
+            <h4>1. Qual é o nome do monstro que sequestra Will Byers na primeira temporada?</h4>
+            <label><input type="radio" name="q1" value="a" onclick="desabilitarOpitions('q1'), playSound()" required> a) O Devorador de Mentes</label><br>
+            <label><input type="radio" name="q1" value="b" onclick="desabilitarOpitions('q1'), playSound()" required> b) Demogorgon</label><br>
+            <label><input type="radio" name="q1" value="c" onclick="desabilitarOpitions('q1'), playSound()" required> c) Vecna</label><br>
+            <label><input type="radio" name="q1" value="d" onclick="desabilitarOpitions('q1'), playSound()" required> d) DemoDog</label><br>
+        </section>
+
+        <section class="questões">
+            <h4>2. Qual é o apelido que Mike, Dustin e Lucas dão ao grupo de amigos?</h4>
+            <label><input type="radio" name="q2" value="a" onclick="desabilitarOpitions('q2'), playSound()" required> a) O Grupo</label><br>
+            <label><input type="radio" name="q2" value="b" onclick="desabilitarOpitions('q2'), playSound()" required> b) Os Caçadores de Demogorgons</label><br>
+            <label><input type="radio" name="q2" value="c" onclick="desabilitarOpitions('q2'), playSound()" required> c) A Gangue de Hawkins</label><br>
+            <label><input type="radio" name="q2" value="d" onclick="desabilitarOpitions('q2'), playSound()" required> d) O Clube dos Perdedores</label><br>
+        </section>
+
+        <section class="questões">
+            <h4>3. Qual é a música favorita de Max Mayfield, que a ajuda a escapar do feitiço de Vecna?</h4>
+            <label><input type="radio" name="q3" value="a" onclick="desabilitarOpitions('q3'), playSound()" required> a) 'Never Gonna Give You Up' de Rick Astley</label><br>
+            <label><input type="radio" name="q3" value="b" onclick="desabilitarOpitions('q3'), playSound()" required> b) 'Separate Ways' de Journey</label><br>
+            <label><input type="radio" name="q3" value="c" onclick="desabilitarOpitions('q3'), playSound()" required> c) 'Running Up That Hill' de Kate Bush</label><br>
+            <label><input type="radio" name="q3" value="d" onclick="desabilitarOpitions('q3'), playSound()" required> d) 'Africa' de Toto</label><br>
+        </section>
+
+        <section class="questões">
+            <h4>4. Qual é a cidade na Califórnia em que Eleven, Will, Jonathan e Argyle se mudam na quarta temporada?</h4>
+            <label><input type="radio" name="q4" value="a" onclick="desabilitarOpitions('q4'), playSound()" required> a) San Francisco</label><br>
+            <label><input type="radio" name="q4" value="b" onclick="desabilitarOpitions('q4'), playSound()" required> b) Los Angeles</label><br>
+            <label><input type="radio" name="q4" value="c" onclick="desabilitarOpitions('q4'), playSound()" required> c) Lenora Hills</label><br>
+            <label><input type="radio" name="q4" value="d" onclick="desabilitarOpitions('q4'), playSound()" required> d) São Diego</label><br>
+        </section>
+
+        <section class="questões">
+            <h4>5. O que Vecna faz com suas vítimas na quarta temporada?</h4>
+            <label><input type="radio" name="q5" value="a" onclick="desabilitarOpitions('q5'), playSound()" required> a) Ele as come.</label><br>
+            <label><input type="radio" name="q5" value="b" onclick="desabilitarOpitions('q5'), playSound()" required> b) Ele as afoga em um lago.</label><br>
+            <label><input type="radio" name="q5" value="c" onclick="desabilitarOpitions('q5'), playSound()" required> c) Ele as amaldiçoa com um feitiço de morte, que quebra seus ossos e faz seus olhos explodirem.</label><br>
+            <label><input type="radio" name="q5" value="d" onclick="desabilitarOpitions('q5'), playSound()" required> d) Ele as tortura psicologicamente.</label><br>
+        </section>
+
+        <button type="button" id="submitQuizId" onclick="submitQuiz()">Enviar respostas</button>
+        <button type="button" id="resetButton" onclick="resetQuiz()" disabled>Responder novamente</button>
+    </form>
+
+        <audio src="som/bomResultado.mp3" id="bomResultadoSom" preload="auto"></audio>
+        <audio src="som/perdeu.mp3" id="perdeuSom" preload="auto"></audio>
+        <audio src="som/selecione.mp3" id="selecioneSom" preload="auto"></audio>
+        <audio src="som/venceu.mp3" id="venceuSom" preload="auto"></audio>
+    
+        <section id="resultado"></section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
