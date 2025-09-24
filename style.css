@@ -28,11 +28,11 @@ h1{
     padding: 20px;
     border-radius: 10px;
     box-shadow: 2px 4px 7px 0px #807f7f;
-    width: 600px;
+    width: 825px;
 }
 
 .questoes, h4{
-    padding: 15px;
+    padding: 6px;
 }
 
 button{
