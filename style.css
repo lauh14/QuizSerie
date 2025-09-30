@@ -8,12 +8,12 @@
 }
 
 body{
-    background-color: rgb(222, 217, 195);
+    background-image: linear-gradient(rgb(0, 0, 87), #4C6FC5, #56699B) ;
     font-family: "Montserrat", sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 201vh;
+    height: 210vh;
 }
 
 h1{
@@ -27,7 +27,7 @@ h1{
     background-color: #f5f3eb;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 2px 4px 7px 0px #807f7f;
+    box-shadow: 1px 3px 44px 0prgb(0, 0, 0)7f;
     width: 825px;
 }
 
