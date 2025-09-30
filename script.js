@@ -18,7 +18,12 @@ function submitQuiz(){
         q2: 'a',
         q3: 'c',
         q4: 'c',
-        q5: 'c'
+        q5: 'c',
+        q6: 'c',
+        q7: 'e',
+        q8: 'b',
+        q9: 'd',
+        q10: 'd'
     };
 
     const form = document.getElementById('quiz-form');
@@ -31,23 +36,23 @@ function submitQuiz(){
         }
     }
 
-    if (score === 4){
+    if (score > 3 && score <= 5){
         const bomResultadoSom = document.getElementById('bomResultadoSom');
         bomResultadoSom.play()
         const resultado = document.getElementById('resultado');
-        resultado.innerHTML = `Você acertou ${score} de 5 perguntas, muito bem!`;
+        resultado.innerHTML = `Você acertou ${score} de 10 perguntas, muito bem!`;
     }
     else if (score <= 3){
         const perdeuSom = document.getElementById('perdeuSom');
         perdeuSom.play()
         const resultado = document.getElementById('resultado');
-        resultado.innerHTML = `Você acertou ${score} de 5 perguntas, precisa assistir denovo!`;
+        resultado.innerHTML = `Você acertou ${score} de 10 perguntas, precisa assistir denovo!`;
     }
     else{
         const venceuSom = document.getElementById('venceuSom');
         venceuSom.play()
         const resultado = document.getElementById('resultado');
-        resultado.innerHTML = `Você acertou ${score} de 5 perguntas, você é fã de carteirinha!`;
+        resultado.innerHTML = `Você acertou ${score} de 10 perguntas, você é fã de carteirinha!`;
     }
 
     document.getElementById('resetButton').disabled = false;
